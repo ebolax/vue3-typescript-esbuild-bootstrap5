@@ -1,6 +1,6 @@
 # Vue 3 + TypeScript + ESBuild + Bootstrap 5 + LiveReload Template
 
-This repo contains a template to create a game using Phaser 3 + TypeScript with ESBuild bundler and Bootstrap 5 Framework.
+This repo contains a template to create a front-end application using Vue 3 + TypeScript with ESBuild bundler and Bootstrap 5 Framework. Also have Livereaload feature!
 
 ## Before you need
 
@@ -14,19 +14,19 @@ A good code editor is also recommended and this repo is designed around [Visual 
 Note that if you have cloned this template repo via GitHub, then you'll need to change the URLs below to match _your_ repo's name:
 
 ```bash
-git clone https://github.com/ebolax/phaser3-typescript-esbuild-bootstrap5
-cd phaser3-typescript-esbuild-bootstrap5
+git clone https://github.com/ebolax/vue3-typescript-esbuild-bootstrap5
+cd vue3-typescript-esbuild-bootstrap5
 npm install
 
 # or
-npx degit "ebolax/phaser3-typescript-esbuild-bootstrap5" mygame
-cd mygame
+npx degit "ebolax/vue3-typescript-esbuild-bootstrap5" myapp
+cd myapp
 npm install
 ```
 
 ## **Build and Run**
 
-The `./dist/index.html` file contains a `<script src="index.js">` tag, which means we need to create `dist/index.js`. The npm command `npm run build` tells ESBuild to create this bundle, starting with `./src/index.js` and including all its dependencies.
+The `./dist/index.html` file contains a `<script src="index.js">` tag, which means we need to create `dist/index.js`. The npm command `npm run build` tells ESBuild to create this bundle, starting with `./src/main.ts` and including all its dependencies.
 
     npm run dev
 
@@ -36,8 +36,8 @@ Watch ./src and ./dist folders to serve the files locally for changes and live r
 
     npm run build
 
-Builds the application and minify to `dist/index.js`. You must do it before you publish your game.
+Builds the application and minify to `dist/index.js`. You must do it before you publish your web application.
 
     npm run serve
 
-It's just serve `./dist` folder to test your game.
+It's just serve `./dist` folder to test your web application.
