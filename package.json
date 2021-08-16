@@ -1,0 +1,38 @@
+{
+    "name": "vue3-typescript-esbuild-bootstrap5",
+    "version": "1.0.0",
+    "description": "Vue.js 3 + TypeScript + ESBuild + Bootstrap 5 + LiveReload Template",
+    "main": "index.js",
+    "scripts": {
+        "build": "node esbuild.config.js prod",
+        "watch": "node esbuild.config.js dev",
+        "serve": "serve dist -p 8000",
+        "dev": "concurrently \"npm run watch\" \"npm run serve\" \"npm run livereload\"",
+        "livereload": "livereload dist/"
+    },
+    "keywords": [
+        "esbuild",
+        "vue",
+        "vue 3",
+        "bootstrap",
+        "bootstrap 5",
+        "livereload",
+        "typescript"
+    ],
+    "author": "ebolax",
+    "license": "ISC",
+    "devDependencies": {
+        "@typescript-eslint/eslint-plugin": "^4.29.1",
+        "@typescript-eslint/parser": "^4.29.1",
+        "bootstrap": "^5.1.0",
+        "concurrently": "^6.2.1",
+        "esbuild": "^0.12.20",
+        "esbuild-plugin-vue3": "^0.2.0",
+        "eslint-plugin-vue": "^7.16.0",
+        "livereload": "^0.9.3",
+        "serve": "^12.0.0",
+        "vue": "^3.2.2",
+        "vue-router": "^4.0.11",
+        "vue-tslint": "^0.3.2"
+    }
+}
