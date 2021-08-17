@@ -28,5 +28,5 @@
         "vue/singleline-html-element-content-newline": 0,
         "vue/multiline-html-element-content-newline": 0
     },
-    "ignorePatterns": ["esbuild.config.js"]
+    "ignorePatterns": ["esbuild.config.js", "dist/"]
 }
