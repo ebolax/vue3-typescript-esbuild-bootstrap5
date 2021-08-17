@@ -2,7 +2,7 @@
     "name": "vue3-typescript-esbuild-bootstrap5",
     "version": "1.0.0",
     "description": "Vue.js 3 + TypeScript + ESBuild + Bootstrap 5 + LiveReload Template",
-    "main": "index.js",
+    "type": "module",
     "scripts": {
         "build": "node esbuild.config.js prod",
         "watch": "node esbuild.config.js dev",

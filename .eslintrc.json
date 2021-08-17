@@ -4,7 +4,6 @@
         "ecmaVersion": 2018,
         "parser": "@typescript-eslint/parser",
         "sourceType": "module",
-        "project": "tsconfig.json",
         "tsconfigRootDir": "./",
         "extraFileExtensions": [ ".vue" ]
     },
