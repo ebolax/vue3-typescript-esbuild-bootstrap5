@@ -3,6 +3,7 @@
     "parserOptions": {
         "ecmaVersion": 2018,
         "parser": "@typescript-eslint/parser",
+        "project": "tsconfig.json",
         "sourceType": "module",
         "tsconfigRootDir": "./",
         "extraFileExtensions": [ ".vue" ]
@@ -26,5 +27,6 @@
         "vue/max-attributes-per-line": 0,
         "vue/singleline-html-element-content-newline": 0,
         "vue/multiline-html-element-content-newline": 0
-    }
+    },
+    "ignorePatterns": ["esbuild.config.js"]
 }
