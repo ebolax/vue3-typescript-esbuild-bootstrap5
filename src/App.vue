@@ -17,29 +17,31 @@
 </template>
 
 <script lang="ts">
-    import { defineComponent, ref } from "vue";
-    import HelloWorld from "./components/HelloWorld.vue";
 
-    export default defineComponent({
-        name: "App",
-        components: {
-            HelloWorld
-        },
-        setup()
+import { defineComponent, ref } from "vue";
+import HelloWorld from "./components/HelloWorld.vue";
+
+export default defineComponent({
+    name: "App",
+    components: {
+        HelloWorld
+    },
+    setup()
+    {
+        const test = ref("test variable");
+
+        const changeVariable = () =>
         {
-            const test = ref("test variable");
+            test.value = "variable changed";
+        };
 
-            const changeVariable = () =>
-            {
-                test.value = "variable changed";
-            };
+        return {
+            test,
+            changeVariable
+        };
+    }
+});
 
-            return {
-                test,
-                changeVariable
-            };
-        }
-    });
 </script>
 
 <style>
