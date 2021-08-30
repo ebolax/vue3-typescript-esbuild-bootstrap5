@@ -3,9 +3,7 @@
     "parserOptions": {
         "ecmaVersion": 2019,
         "parser": "@typescript-eslint/parser",
-        "project": "tsconfig.json",
         "sourceType": "module",
-        "tsconfigRootDir": "./",
         "extraFileExtensions": [ ".vue" ]
     },
     "plugins": [
@@ -25,9 +23,7 @@
         "dist",
         "node_modules",
         ".vscode",
-        ".git",
-        "esbuild.config.js",
-        "src/shims-vue.d.ts"
+        ".git"
     ],
     "rules": {
         "semi": [2, "always"],
