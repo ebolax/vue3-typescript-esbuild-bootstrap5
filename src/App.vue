@@ -18,29 +18,29 @@
 
 <script lang="ts">
 
-import { defineComponent, ref } from "vue";
-import HelloWorld from "./components/HelloWorld.vue";
+    import { defineComponent, ref } from "vue";
+    import HelloWorld from "./components/HelloWorld.vue";
 
-export default defineComponent({
-    name: "App",
-    components: {
-        HelloWorld
-    },
-    setup()
-    {
-        const test = ref("test variable");
-
-        const changeVariable = () =>
+    export default defineComponent({
+        name: "App",
+        components: {
+            HelloWorld
+        },
+        setup()
         {
-            test.value = "variable changed";
-        };
+            const test = ref("test variable");
 
-        return {
-            test,
-            changeVariable
-        };
-    }
-});
+            const changeVariable = () =>
+            {
+                test.value = "variable changed";
+            };
+
+            return {
+                test,
+                changeVariable
+            };
+        }
+    });
 
 </script>
 
