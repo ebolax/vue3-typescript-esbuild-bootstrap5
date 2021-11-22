@@ -2,22 +2,23 @@
     <div class="container mt-5">
         <div class="row">
             <div class="col text-center">
-
                 <img src="assets/img/vue-logo.png" class="logo" />
 
-                <HelloWorld msg="Vue 3 + ESBuild + Bootstrap 5 + Livereload"></HelloWorld>
+                <HelloWorld
+                    msg="Vue 3 + ESBuild + Bootstrap 5 + Livereload"
+                ></HelloWorld>
 
                 <p class="mt-2">Test Variable: {{ test }}</p>
 
-                <button class="btn btn-danger" @click="changeVariable">Change Variable</button>
-
+                <button class="btn btn-danger" @click="changeVariable">
+                    Change Variable
+                </button>
             </div>
         </div>
     </div>
 </template>
 
 <script lang="ts">
-
     import { defineComponent, ref } from "vue";
     import HelloWorld from "./components/HelloWorld.vue";
 
@@ -26,12 +27,10 @@
         components: {
             HelloWorld
         },
-        setup()
-        {
+        setup() {
             const test = ref("test variable");
 
-            const changeVariable = () =>
-            {
+            const changeVariable = () => {
                 test.value = "variable changed";
             };
 
@@ -41,11 +40,10 @@
             };
         }
     });
-
 </script>
 
 <style>
-    .logo {
-        max-width: 100px;
-    }
+.logo {
+    max-width: 100px;
+}
 </style>

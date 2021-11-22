@@ -1,10 +1,11 @@
 <template>
     <h1>{{ msg }}</h1>
-    <button class="btn btn-primary" @click="count++">Count is: {{ count }}</button>
+    <button class="btn btn-primary" @click="count++">
+        Count is: {{ count }}
+    </button>
 </template>
 
 <script lang="ts">
-
     import { ref, defineComponent } from "vue";
 
     export default defineComponent({
@@ -15,18 +16,15 @@
                 required: true
             }
         },
-        setup: () =>
-        {
+        setup: () => {
             const count = ref(0);
             return { count };
         }
     });
-
 </script>
 
 <style scoped>
-    h1
-    {
-        font-size: 20px;
-    }
+h1 {
+    font-size: 20px;
+}
 </style>
